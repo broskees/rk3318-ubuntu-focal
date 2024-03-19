@@ -11,5 +11,5 @@ jobs:
           armbian_token:     "${{ secrets.GITHUB_TOKEN }}"  # GitHub token
           armbian_release:   "focal"                        # userspace
           armbian_target:    "build"                        # build=image, kernel=kernel
-          armbian_board:     "RK3318 BOX"                   # build target
+          armbian_board:     "RK3318 Box"                   # build target
           armbian_ui:        "yes"
