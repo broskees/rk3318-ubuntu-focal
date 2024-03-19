@@ -7,10 +7,9 @@ jobs:
     steps:
       - uses: armbian/build@main
         with:
+          # 'armbian_token', 'armbian_runner_clean', 'armbian_artifacts', 'armbian_target', 'armbian_branch', 'armbian_kernel_branch', 'armbian_release', 'armbian_version', 'armbian_board', 'armbian_ui', 'armbian_compress', 'armbian_extensions', 'armbian_userpatches', 'armbian_pgp_key', 'armbian_pgp_password', 'armbian_release_tittle', 'armbian_release_body'
           armbian_token:     "${{ secrets.GITHUB_TOKEN }}"  # GitHub token
           armbian_release:   "focal"                        # userspace
           armbian_target:    "build"                        # build=image, kernel=kernel
           armbian_board:     "RK3318 BOX"                   # build target
-          armbian_minimal:   "no"
-          armbian_desktop:   "yes"
-          armbian_expert:    "yes"
+          armbian_ui:        "yes"
